@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15mdp"
+    tools:context=".MainActivity">
+
+    <!--text view for displaying the selected theme-->
+    <TextView
+        android:id="@+id/settings_lang_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:text="@string/setting_lang_dialog_lang_tv"
+        android:paddingEnd="@dimen/_5mdp"
+        android:paddingStart="@dimen/_5mdp"
+       android:textStyle="bold"
+        android:textSize="@dimen/_12font_mdp"/>
+
+    <!--radio group for switching theme-->
+    <RadioGroup
+        android:id="@+id/fragment_setting_lang_dialog_RG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_lang_title_dialog"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <!--radio button for light theme-->
+        <RadioButton
+            android:id="@+id/fragment_setting_lang_dialog_Rb_eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+
+            android:text="@string/setting_lang_dialog_eng_rb" />
+
+        <!--radio button for dark theme-->
+        <RadioButton
+            android:id="@+id/fragment_setting_lang_dialog_Rb_fa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/setting_lang_dialog_fa_rb" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/fragment_setting_lang_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_lang_dialog_cancel_tv"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12font_mdp"
+        android:layout_alignBottom="@id/fragment_setting_lang_dialog_RG"/>
+
+</RelativeLayout>

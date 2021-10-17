@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.settings.SettingsFragment">
+
+    <include layout="@layout/setting_toolbar"
+        android:id="@+id/fragment_setting_toolbar"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="@dimen/_1mdp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintGuide_begin="@dimen/_50mdp"
+        android:orientation="vertical"
+        android:id="@+id/fragment_setting_g50"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15mdp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_setting_toolbar"
+        app:layout_constraintLeft_toRightOf="@id/fragment_setting_g50"
+        app:layout_constraintStart_toEndOf="@id/fragment_setting_g50"
+        android:text="@string/settings_frag_general_tv"
+        android:id="@+id/fragment_setting_general"
+        android:textSize="@dimen/_10font_mdp"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_setting_lang_const"
+        app:layout_constraintTop_toBottomOf="@id/fragment_setting_general"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/fragment_setting_g50"
+        app:layout_constraintLeft_toRightOf="@id/fragment_setting_g50">
+        <TextView
+            android:id="@+id/fragment_setting_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/settings_frag_language_tv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/_12font_mdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/fragment_setting_lang"
+            app:layout_constraintLeft_toLeftOf="@id/fragment_setting_lang"
+            app:layout_constraintStart_toStartOf="@id/fragment_setting_lang"
+            android:id="@+id/fragment_setting_save_lang_value"
+            android:textSize="@dimen/_12font_mdp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_setting_theme_const"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15mdp"
+        app:layout_constraintLeft_toRightOf="@id/fragment_setting_g50"
+        app:layout_constraintStart_toStartOf="@+id/fragment_setting_g50"
+        app:layout_constraintTop_toBottomOf="@id/fragment_setting_lang_const">
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/fragment_setting_theme_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_frag_theme_tv"
+            android:textSize="@dimen/_12font_mdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_setting_save_theme_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_setting_theme_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomSheetMenuSettingsThemeItem"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/main_bottom_sheet_settings_icon"
+        />
+
+    <item
+        android:id="@+id/bottomSheetMenuAboutItem"
+        android:icon="@drawable/ic_outline_info_24"
+        android:title="@string/main_bottom_sheet_about_icon" />
+
+
+</menu>

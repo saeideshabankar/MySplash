@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Splash</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="file_provider_name">file_provider</string>
+    <string name="setting_frag_lang_value_tv">فارسی</string>
+    <string name="main_bottom_sheet_settings_icon">تنظیمات</string>
+    <string name="main_bottom_sheet_about_icon">درباره ی</string>
+    <string name="main_tabs_item_menu">منو</string>
+    <string name="main_tabs_item_search">سرچ</string>
+    <string name="menu_item_sort">مرتب سازی</string>
+    <string name="home">خانه</string>
+    <string name="collection">کالکشن</string>
+    <string name="camera">دوربین</string>
+    <string name="aperture">دیافراگم</string>
+    <string name="focal_length">فاصله کانونی</string>
+    <string name="shutter_speed">سرعت شاتر</string>
+    <string name="iso">ایزو</string>
+    <string name="dimentions">ابعاد</string>
+    <string name="views">بازدید کنندگان</string>
+    <string name="downloads">دانلودها</string>
+    <string name="likes">بسندیدن</string>
+    <string name="set_as_wallpaper">تنظیم بشت زمینه</string>
+    <string name="setting_lang_dialog_lang_tv">زبان</string>
+    <string name="setting_lang_dialog_eng_rb">انگلیسی</string>
+    <string name="setting_lang_dialog_fa_rb">فارسی</string>
+    <string name="setting_lang_dialog_cancel_tv">لغو</string>
+    <string name="setting_theme_dialog_titile_tv">تم</string>
+    <string name="setting_theme_dialog_light_rb">روشن</string>
+    <string name="setting_theme_dialog_dark_rb">تاریک</string>
+    <string name="setting_theme_dialog_cancel_tv">لغو</string>
+    <string name="sort_collection_dialog_tv">مرتب سازی </string>
+    <string name="sort_collection_dialog_rb">همه</string>
+    <string name="sort_home_dialog_title">مرتب سازی</string>
+    <string name="sort_home_dialog_latest_rb">اخرین</string>
+    <string name="sort_home_dialog_oldest_rb">قدیمی ترین</string>
+    <string name="sort_home_dialog_popular_rb">محبوب ترین</string>
+    <string name="hint_search">جستجو</string>
+    <string name="photo">عکس</string>
+    <string name="settings_frag_general_tv">عمومی</string>
+    <string name="settings_frag_language_tv">زبان</string>
+    <string name="settings_frag_theme_tv">تم</string>
+    <string name="settings_frag_title_page">تنظیمات</string>
+    <string name="fragment_settings_system_default">پیشفرض سیستم</string>
+</resources>

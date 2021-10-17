@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/one_collection_frag"
+    tools:context=".ui.main.one_collection_frag.OneCollectionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/one_collection_tool1"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/_10mdp">
+
+        <ImageView
+            android:id="@+id/toolbar_back1"
+            android:layout_width="@dimen/_24mdp"
+            android:layout_height="@dimen/_24mdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/toolbar_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10mdp"
+            android:layout_marginStart="@dimen/_10mdp"
+            android:layout_marginRight="@dimen/_10mdp"
+            android:layout_marginEnd="@dimen/_10mdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12mdp"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_back1"
+            app:layout_constraintLeft_toRightOf="@id/toolbar_back1"
+            app:layout_constraintStart_toEndOf="@id/toolbar_back1"
+            app:layout_constraintTop_toTopOf="@id/toolbar_back1" />
+
+        <ImageView
+            android:id="@+id/toolbar_browser1"
+            android:layout_width="@dimen/_24mdp"
+            android:layout_height="@dimen/_24mdp"  android:layout_marginLeft="@dimen/_10mdp"
+            android:layout_marginStart="@dimen/_10mdp"
+            android:layout_marginRight="@dimen/_10mdp"
+            android:layout_marginEnd="@dimen/_10mdp"
+            app:layout_constraintRight_toLeftOf="@id/toolbar_more1"
+            app:layout_constraintEnd_toStartOf="@id/toolbar_more1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_open_in_browser_24"
+             />
+
+        <ImageView
+            android:id="@+id/toolbar_more1"
+            android:layout_width="@dimen/_24mdp"
+            android:layout_height="@dimen/_24mdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/one_collection_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/one_collection_tool1"/>
+
+    <ProgressBar
+        android:id="@+id/one_collectionFrag_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

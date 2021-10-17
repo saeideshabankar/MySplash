@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.search_activity.SearchActivity">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:id="@+id/Search_const">
+    <ImageView
+        android:id="@+id/search_back"
+        android:layout_width="@dimen/_24mdp"
+        android:layout_height="@dimen/_24mdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_10mdp"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30mdp"
+        android:layout_marginStart="@dimen/_30mdp"
+        android:hint="@string/hint_search"
+        android:background="@null"
+        android:textSize="@dimen/_12mdp"
+        app:layout_constraintBottom_toBottomOf="@id/search_back"
+        app:layout_constraintLeft_toRightOf="@id/search_back"
+        app:layout_constraintStart_toEndOf="@id/search_back"
+        app:layout_constraintTop_toTopOf="@id/search_back" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/search_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10mdp"
+        app:layout_constraintTop_toBottomOf="@id/search_back" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/search_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_tabLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_frag_empty_const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/_5mdp">
+
+        <ImageView
+            android:id="@+id/search_frag_empty_box_img"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="@dimen/_100mdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_box" />
+        <TextView
+            android:id="@+id/search_frag_resultOfSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:gravity="center"
+            android:text="Did not find any photo "
+            android:textStyle="bold"
+            android:padding="@dimen/_10mdp"
+            android:layout_margin="@dimen/_10mdp"
+            android:textSize="@dimen/_12mdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_frag_empty_box_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/search_collectionFrag_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+       <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/search_fragmentContainerView"
+        android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

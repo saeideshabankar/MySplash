@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.SplashScreenActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Splash"
+        android:textSize="@dimen/_25mdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/splash_icon"
+        app:layout_constraintEnd_toEndOf="@+id/splash_icon"
+        app:layout_constraintStart_toStartOf="@+id/splash_icon" />
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:layout_marginTop="@dimen/_10mdp"
+        android:id="@+id/splash_icon"
+        android:layout_width="@dimen/_120mdp"
+        android:layout_height="@dimen/_120mdp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="@dimen/_100mdp"
+        app:roundedCorners="all"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/splash_icon1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

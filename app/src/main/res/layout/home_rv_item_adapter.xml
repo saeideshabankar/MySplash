@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5mdp"
+    android:layout_marginBottom="@dimen/_20mdp">
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/profile_item_img"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:layout_marginStart="@dimen/_10mdp"
+        android:layout_marginEnd="@dimen/_10mdp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="@dimen/_50mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15mdp"
+        android:layout_marginEnd="@dimen/_15mdp"
+        android:textSize="@dimen/_12font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/profile_item_img"
+        app:layout_constraintStart_toEndOf="@id/profile_item_img"
+        app:layout_constraintTop_toTopOf="@id/profile_item_img" />
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/big_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170mdp"
+        android:layout_margin="@dimen/_10mdp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="@dimen/_10mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_item_img" />
+
+    <ProgressBar
+        android:id="@+id/progress_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/big_item_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/big_item_img" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constOnCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5mdp"
+        android:paddingStart="@dimen/_10mdp"
+        android:paddingEnd="@dimen/_10mdp"
+        app:layout_constraintBottom_toBottomOf="@id/big_item_img"
+        app:layout_constraintStart_toStartOf="@id/big_item_img">
+
+        <TextView
+            android:id="@+id/picLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10font_mdp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/numberOfPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10font_mdp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/picLocation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
